@@ -15,12 +15,12 @@ scifi = Genre.create(name: "Sci-Fi")
 action = Genre.create(name: "Action")
 horror = Genre.create(name: "Horror")
 drama = Genre.create(name: "Drama")
-fantasy = Genre.create(name: "fantasy")
+fantasy = Genre.create(name: "Fantasy")
 
-film = Program.create(media_type: "Film")
-tv = Program.create(media_type: "TV")
+# film = Program.create(media_type: "Film")
+# tv = Program.create(media_type: "TV")
 
 
-Program.create(title: "Fight Club", favorite_quote: "It's only after we've lost everything that we're free to do anything." , media_type: film.media_type , image_url: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",genre_id: drama.id)
+Program.create(title: "Fight Club", favorite_quote: "It's only after we've lost everything that we're free to do anything." , media_type: "Film", image_url: "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",genre_id: drama.id)
 
 # source: https://en.wikipedia.org/wiki/Fight_Club

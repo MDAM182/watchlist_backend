@@ -3,12 +3,12 @@ class Api::V1::ProgramsController < ApplicationController
   def index
     programs = Program.all
     # render json: @programs
-    render json: ProgramSerializer.new(pprograms)
+    render json: ProgramSerializer.new(programs)
   end
 
   def create
     program = Program.new(program_params)
-    if syllabus.save
+    if program.save
       render json: program, status: :accepted
     else
       render json: {errors: program.errors.full_messages}, status: :unprocessible_entity

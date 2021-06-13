@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_04_15_051750) do
     t.string "favorite_quote"
     t.string "media_type"
     t.string "image_url"
-    t.bigint "genre_id"
+    t.bigint "genre_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["genre_id"], name: "index_programs_on_genre_id"

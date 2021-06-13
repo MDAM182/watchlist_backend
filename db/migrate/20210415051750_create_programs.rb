@@ -5,7 +5,7 @@ class CreatePrograms < ActiveRecord::Migration[5.2]
       t.string :favorite_quote
       t.string :media_type
       t.string :image_url
-      t.references :genre, foreign_key: true
+      t.references :genre, null: false, foreign_key: true
 
       t.timestamps
     end
