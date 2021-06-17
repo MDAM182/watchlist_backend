@@ -26,10 +26,7 @@ class Api::V1::ProgramsController < ApplicationController
       end
     end
 
-  # def update
-  #   Program.find(params[:id]).update(program_params)
-  #   render json: Program.find(params[:id])
-# end
+  
 #
 # def destroy
 #  render json: Program.find(params[:id]).destroy
