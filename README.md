@@ -7,6 +7,7 @@ Welcome to WatchList, A checklist blog app that allows users to upload programs(
 # Installation
 
 git clone (BACKEND): https://github.com/MDAM182/watchlist_backend.git
+
 git clone (FRONTEND): https://github.com/MDAM182/watchlist_frontend.git
 
 cd into watchlist_backend
